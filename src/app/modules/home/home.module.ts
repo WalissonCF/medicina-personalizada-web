@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './pages/home/home.component';
-
+import { HomeRoutingModule } from './home-routing.module';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { ButtonPrimaryComponent } from 'src/app/shared/atoms/button/button-primary/button-primary.component';
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
+    HomeRoutingModule,
     CommonModule,
-    HomeRoutingModule
+    SharedModule,
   ]
 })
 export class HomeModule { }
