@@ -1,39 +1,68 @@
-<div class="container mx-auto w-full h-screen flex items-center justify-center">
-    <div class="h-full w-5/6">
-        <div class="box-border px-2 py-2 w-full h-auto" role="alert" aria-label="Modo de uso">
-            <p class="font-sans text-base font-medium">
-                Bem-vindo à revolucionária era da Medicina Personalizada, onde unimos a experiência dos médicos com a
-                inteligência artificial do ChatGPT para oferecer diagnósticos mais precisos e abrangentes.
-            </p>
-            <app-button-primary (onClick)="teste()">
-                Leia mais
-            </app-button-primary>
-            <br>
-            <p class="font-sans text-sm font-semibold" *ngIf="false">
-                Essa abordagem inovadora leva em conta a singularidade de cada paciente, considerando suas
-                características genéticas, estilo de vida e ambiente. Com o ChatGPT, nossos médicos têm acesso a
-                informações detalhadas e insights atualizados, proporcionando tratamentos personalizados e eficazes.
-                Estamos comprometidos em capacitar a comunidade médica com ferramentas avançadas, valorizando sempre o
-                papel crucial dos médicos. Junte-se a nós nesta jornada rumo a uma medicina mais humana, centrada no
-                paciente e impulsionada pela inovação, onde a Medicina Personalizada com o ChatGPT promete melhores
-                resultados e esperança para todos.
-            </p>
+<app-pop-up>
+    <div role="alert" aria-label="Modo de uso">
+        <p class="font-sans font-medium text-base">
+            Bem-vindo à revolucionária era da Medicina Personalizada, onde unimos a experiência dos médicos com a
+            inteligência artificial do ChatGPT para oferecer diagnósticos mais precisos e abrangentes.
+        </p>
+        <br>
+        <p class="font-sans font-medium text-base">
+            Essa abordagem inovadora leva em conta a singularidade de cada paciente, considerando suas
+            características genéticas, estilo de vida e ambiente. Com o ChatGPT, nossos médicos têm acesso a
+            informações detalhadas e insights atualizados, proporcionando tratamentos personalizados e eficazes.
+            Estamos comprometidos em capacitar a comunidade médica com ferramentas avançadas, valorizando sempre o
+            papel crucial dos médicos. Junte-se a nós nesta jornada rumo a uma medicina mais humana, centrada no
+            paciente e impulsionada pela inovação, onde a Medicina Personalizada com o ChatGPT promete melhores
+            resultados e esperança para todos.
+        </p>
+    </div>
+</app-pop-up>
+
+
+
+<div class="container w-screen h-screen mx-auto">
+    <div class="w-5/6 h h-full mx-auto">
+        <div class="h-36">
+
         </div>
 
-        <div class="px-2 py-4 w-full h-auto flex justify-center bg-purple-400">
-            <form action="">
-                <div>
-                    <input type="text">
-                </div>
-                <div>
-                    <input type="text">
-                </div>
-                <button type="submit">teste</button>
-            </form>
+        <div class="w-full mb-3">
+            <label class="text-base font-bold text-zinc-400 mb-3">Sexo</label>
         </div>
+        <app-organisms-radio-form></app-organisms-radio-form>
 
-        <div class="box-border px-2 py-3 w-full">
-            <textarea class="resize-none w-full h-auto rounded-md"></textarea>
+        <div class="w-full flex justify-between mb-4 mt-6">
+            <div class="w-1/2 pr-4">
+                <div class="w-full mb-3">
+                    <label class="text-base font-bold text-zinc-400 mb-3">Idade</label>
+                </div>
+                <app-input-text textPlaceholder="Idade"></app-input-text>
+            </div>
+            <div class="w-1/2 pl-4">
+                <div class="w-full mb-3">
+                    <label class="text-base font-bold text-zinc-400 mb-3">Altura</label>
+                </div>
+                <app-input-text textPlaceholder="Altura"></app-input-text>
+            </div>
+        </div>
+        <div class="w-full flex justify-between mb-4 mt-6">
+            <div class="w-1/2 pr-4">
+                <div class="w-full mb-3">
+                    <label class="text-base font-bold text-zinc-400 mb-3">Sintomas</label>
+                </div>
+                <textarea id="message" rows="4"
+                    class="block resize-none p-4 w-full font-semibold hover:text-violet-600 hover:bg-violet-50 hover:border-violet-600 focus:text-violet-600 focus:bg-violet-50 text-zinc-500 bg-transparent rounded-lg border-2 border-zinc-300 focus:ring-violet-600 focus:border-violet-600 transition-colors duration-300 ease-in"
+                    placeholder="Escreva sobre os sintomas aqui..."></textarea>
+                <div class="w-1/2 pl-4">
+                </div>
+            </div>
+
+
+            <!-- <div class="w-1/2 pr-2">
+                <app-input-text></app-input-text>
+            </div> -->
+            <!-- <div class="w-1/2 pl-2">
+                <app-input-text></app-input-text>
+            </div> -->
         </div>
     </div>
 </div>

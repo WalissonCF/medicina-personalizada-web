@@ -1,0 +1,12 @@
+<div id="glass" class="w-full h-screen md:mx-auto flex justify-center items-center fixed z-10" *ngIf="!showPopUp">
+    <div class="w-80 h-auto bg-white shadow-2xl rounded-xl py-5">
+        <div class="px-5 w-full max-h-96 overflow-auto">
+            <ng-content></ng-content>
+        </div>
+        <div class="w-full px-5 pt-5">
+            <app-button-secondary (onClick)="handleClosePopUp()">
+                Fechar
+            </app-button-secondary>
+        </div>
+    </div>
+</div>
