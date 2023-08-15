@@ -21,7 +21,7 @@
 
 <div class="container w-screen h-screen mx-auto">
     <div class="w-5/6 h h-full mx-auto">
-        <div class="h-36">
+        <div class="h-10">
 
         </div>
 
@@ -44,25 +44,36 @@
                 <app-input-text textPlaceholder="Altura"></app-input-text>
             </div>
         </div>
+
         <div class="w-full flex justify-between mb-4 mt-6">
             <div class="w-1/2 pr-4">
                 <div class="w-full mb-3">
                     <label class="text-base font-bold text-zinc-400 mb-3">Sintomas</label>
                 </div>
-                <textarea id="message" rows="4"
+                <textarea id="message" rows="3"
                     class="block resize-none p-4 w-full font-semibold hover:text-violet-600 hover:bg-violet-50 hover:border-violet-600 focus:text-violet-600 focus:bg-violet-50 text-zinc-500 bg-transparent rounded-lg border-2 border-zinc-300 focus:ring-violet-600 focus:border-violet-600 transition-colors duration-300 ease-in"
                     placeholder="Escreva sobre os sintomas aqui..."></textarea>
-                <div class="w-1/2 pl-4">
-                </div>
             </div>
 
+            <div class="w-1/2 pl-4">
+                <div class="w-full mb-3">
+                    <label class="text-base font-bold text-zinc-400 mb-3">Alergias</label>
+                </div>
+                <textarea id="message" rows="3"
+                    class="block resize-none p-4 w-full font-semibold hover:text-violet-600 hover:bg-violet-50 hover:border-violet-600 focus:text-violet-600 focus:bg-violet-50 text-zinc-500 bg-transparent rounded-lg border-2 border-zinc-300 focus:ring-violet-600 focus:border-violet-600 transition-colors duration-300 ease-in"
+                    placeholder="Escreva sobre as alergias aqui..."></textarea>
+            </div>
+        </div>
 
-            <!-- <div class="w-1/2 pr-2">
-                <app-input-text></app-input-text>
-            </div> -->
-            <!-- <div class="w-1/2 pl-2">
-                <app-input-text></app-input-text>
-            </div> -->
+        <div class="w-full flex justify-between mb-4 mt-6">
+            <div class="w-full">
+                <div class="w-full mb-3">
+                    <label class="text-base font-bold text-zinc-400 mb-3">Histórico</label>
+                </div>
+                <textarea id="message" rows="3"
+                    class="block resize-none p-4 w-full font-semibold hover:text-violet-600 hover:bg-violet-50 hover:border-violet-600 focus:text-violet-600 focus:bg-violet-50 text-zinc-500 bg-transparent rounded-lg border-2 border-zinc-300 focus:ring-violet-600 focus:border-violet-600 transition-colors duration-300 ease-in"
+                    placeholder="Escreva o histórico aqui..."></textarea>
+            </div>
         </div>
     </div>
 </div>
