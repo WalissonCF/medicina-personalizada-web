@@ -1,15 +1,17 @@
-import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
+import { SharedModule } from 'src/app/shared/shared.module';
 import { HomeComponent } from './pages/home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
-import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
     HomeComponent,
   ],
   imports: [
+    ReactiveFormsModule,
     HomeRoutingModule,
     CommonModule,
     SharedModule,
